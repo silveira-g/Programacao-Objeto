@@ -1,4 +1,37 @@
-Fundamentos da POO
+Fundndamentos da POO
 Abstração
 Reuso: reusar codigos
 Encapsulamento : capacidade de esconder complexidade 
+
+Herança:
+relacionamento de classes em que uma subclasse (classe filha, classe derivada) é uma extensão, um subtipo de outra classe chamada superclasse (classe pai, classe mãe, classe base). Devido isto a subclasse consegue reaproveitar os atributos e metodos da superclasse, alem de ter seus proprios.
+
+class A extends B{
+	...
+}
+
+Existem dois tipos de herança: 
+Simples-> subclasse só tem uma classe mãe
+Multipla-> subclasse tem duas ou mais classes mãe
+
+
+Polimorfismo:
+"A mesma ação se portando diferente"
+Sorbeescrita:
+"A mesma ação PODENDO se portar diferente"
+
+
+Associação:
+Neste tipo de relacionamento as classes e objetos interagem entre si para atingir um objetivo
+2 tipos:
+Estrutural:
+
+Composição: um objeto só existe se outro existir
+Agregação: cada objeto pode existir independente
+
+Comportamental
+Dependencia
+
+Interface:
+Define um contrato que deve ser seguido pela classe que o implementa.
+Quando uma classe usa interface tem que realizar todos os comportamentos da interface.
