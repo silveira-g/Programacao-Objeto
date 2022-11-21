@@ -1,37 +1,19 @@
-public class Carro {
-    String cor;
-    String modelo;
-    int capacidadeTanque;
+public class Carro extends Veiculo{
+    int quantidadePortas;
 
     Carro(){
 
     }
-    Carro(String cor, String modelo, int capacidadeTanque){
+    Carro(String cor, String modelo, int capacidadeTanque, int quantidadePortas){
         this.cor = cor;
         this.modelo = modelo;
         this.capacidadeTanque = capacidadeTanque;
+        this.quantidadePortas = quantidadePortas;
     }
-    
-    void setCor(String cor){
-        this.cor = cor;
+    void setQuantidadePortas(int quantidadePortas){
+        this.quantidadePortas=quantidadePortas;
     }
-    String getCor(){
-        return cor;
-    }
-    void setModelo(String modelo){
-        this.modelo = modelo;
-    }
-    String getModelo(){
-        return modelo;
-    }
-    void setCapacidadeTanque(int capacidadeTanque){
-        this.capacidadeTanque = capacidadeTanque;
-    }
-    int getCapacidadeTanque(){
-        return capacidadeTanque;
-    }
-
-    double calcularTotal(double valorGasolina){
-        return capacidadeTanque*valorGasolina;
+    int getCapacidadePortas(){
+        return quantidadePortas;
     }
 }
