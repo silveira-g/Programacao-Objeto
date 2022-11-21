@@ -1,0 +1,4 @@
+Fundamentos da POO
+Abstração
+Reuso: reusar codigos
+Encapsulamento : capacidade de esconder complexidade 
