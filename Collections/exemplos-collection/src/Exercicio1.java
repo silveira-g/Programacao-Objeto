@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -13,15 +12,12 @@ public class Exercicio1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Double> temperaturas = new ArrayList<>();
+        double soma =0;
         for (int i = 0; i < 6; i++){
             System.out.println("Insira a temperatura do mês: ");
-            temperaturas.add(sc.nextDouble());
-        }
-        Iterator<Double> iterator = temperaturas.iterator();
-        double soma =0;
-        while (iterator.hasNext()) {
-            double next = iterator.next();
-            soma += next;
+            double temp = sc.nextDouble();
+            temperaturas.add(temp);
+            soma+= temp;
         }
         double media = soma/temperaturas.size();
         System.out.println("Media semestral: " + media);
