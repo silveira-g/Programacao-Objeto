@@ -22,10 +22,13 @@ public class Exercicio2 {
         for (Pergunta pergunta : perguntas) {
             if (pergunta.resposta.equals("s")) comparacao++;
         }
-        if (comparacao==0) System.out.println("Ihocente");
-        else if (comparacao==2) System.out.println("Suspeito");
-        else if (comparacao==3 || comparacao==4) System.out.println("Cumplice");
-        else if (comparacao == 5) System.out.println("Assassino");
+        switch (comparacao){ 
+            case 2: System.out.println("Suspeito"); break;
+            case 3:
+            case 4: System.out.println("Cumplice"); break;
+            case 5: System.out.println("Assassino"); break;
+            default: System.out.println("Inocente"); break;
+        }
         System.out.println(perguntas);
         sc.close(); 
 
