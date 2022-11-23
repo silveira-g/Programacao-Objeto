@@ -35,3 +35,10 @@ Dependencia
 Interface:
 Define um contrato que deve ser seguido pela classe que o implementa.
 Quando uma classe usa interface tem que realizar todos os comportamentos da interface.
+
+
+
+Colletctions:
+Interface List:
+java.util.List
+Permite elementos duplicados e garante ordem de inserção
